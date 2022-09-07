@@ -17,7 +17,7 @@ function binarySearch(array, item) {
 	let position = -1;
 	while (found === false && start <= end) {
 		count += 1;
-		middle = Math.floor(start + end) / 2;
+		middle = Math.floor((start + end) / 2);
 		if (array[middle] === item) {
 			found = true;
 			position = middle;
@@ -32,5 +32,5 @@ function binarySearch(array, item) {
 	return position;
 }
 
-console.log(binarySearch(array, 0));
+console.log(binarySearch(array, 4));
 console.log(count);
